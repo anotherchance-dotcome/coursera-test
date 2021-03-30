@@ -2,62 +2,249 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Media Queries</title>
+<title>Our Menu</title>
 <style>
 
 /********** Base styles **********/
 h1 {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 p {
   border: 1px solid black;
   margin-bottom: 15px;
 }
+
+div {
+  border: 1px solid black;
+  width : 90%;
+  margin-right: 10px;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
 #p1 {
-  background-color: #A52A2A;
-  width: 300px;
-  height: 300px;
+  background-color: Tomato;
+  text-align: center;
+  width: 60px;
+  height: 25px;
+  margin-top: 0px;
+  float : right;
 }
 #p2 {
-  background-color: #DEB887;
-  width: 50px;
-  height: 50px;
+  background-color: Orange;
+  text-align: center;
+  width: 60px;
+  height: 25px;
+  margin-top: 0px;
+  float : right;
 }
 
+#p3 {
+  background-color: DodgerBlue;
+  text-align: center;
+  width: 60px;
+  height: 25px;
+  margin-top: 0px;
+  float : right;
+}
+
+.content1 {
+  clear : right
+}
+
+.content2 {
+  clear : right
+}
+
+.content3 {
+  clear : right
+}
+
+
+#s1 {
+  background-color: LightGrey;
+  padding :  0px 0px 5px 5px;
+  text-align: left;
+  width: 300px;
+  height: 200px;
+  float : left;
+}
+
+#s2 {
+  background-color: LightGrey;
+  padding : 0px 0px 5px 5px;
+  text-align: left;
+  width: 300px;
+  height: 200px;
+  float : left;
+}
+
+#s3 {
+  background-color: LightGrey;
+  padding : 0px 0px 5px 5px;
+  text-align: left;
+  width: 300px;
+  height: 200px;
+  float : left;
+}
+
+
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  #p1 {
-    width: 80%;
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
   }
-  #p2 {
-    width: 150px;
-    height: 150px;
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
   }
 }
+
 
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  #p1 {
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
     width: 50%;
   }
-  #p2 {
-    width: 100px;
-    height: 100px;
+  .col-lg-7 {
+    width: 58.33%;
   }
-  body {
-    background-color: blue;
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
   }
 }
 
-</style>
+@media (max-width: 767px) {
+ .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+
+</style> 
 </head>
 <body>
-<h1>Media Queries</h1>
+<h1>Our Menus</h1>
 
-<p id="p1"></p>
-<p id="p2"></p>
+<div id = "s1" , class = "col-lg-4 col-lg-6 col-lg-12">
+	<p id="p1"> Chicken </p>
+	<section class = "content1"> lorem ipsun dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore nagna aliqua. Ut enim ad minim veniam, quis nostrud exerctitation ullamco laboris nisi ut aliquip ex ea commodo consequat </section>
+</div>
+
+<div id = "s2" , class = "col-lg-4 col-lg-6 col-lg-12">
+	<p id="p2"> Beef </p>
+	<section class = "content2"> lorem ipsun dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore nagna aliqua. Ut enim ad minim veniam, quis nostrud exerctitation ullamco laboris nisi ut aliquip ex ea commodo consequat </section>
+</div>
+
+<div id = "s3" , class = "col-lg-4 col-lg-6 col-lg-12">
+	<p id="p3"> Sushi</p>
+	<section class = "content3"> lorem ipsun dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore nagna aliqua. Ut enim ad minim veniam, quis nostrud exerctitation ullamco laboris nisi ut aliquip ex ea commodo consequat </section>
+</div>
+
+
 
 </body>
 </html>
