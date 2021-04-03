@@ -1,0 +1,67 @@
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+}
+
+section {
+  width : 100%;
+  height : 200px;
+  clear :right;
+}
+#p1 {
+  background-color: Tomato;
+  text-align: center;
+  float : right;
+  width: 60px;
+  height: 25px;
+  margin-top: 0;
+}
+#p2 {
+  background-color: Orange;
+  text-align: center;
+  float : right;
+  width: 60px;
+  height: 25px;
+  margin-top: 0;
+}
+
+#p3 {
+  background-color: DodgerBlue;
+  text-align: center;
+  float : right;
+  width: 60px;
+  height: 25px;
+  margin-top: 0;
+}
+
+.menu {
+  background-color: Lightgray;
+  border: 3px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#content1 {
+  padding :  0px 0px 5px 5px;
+  text-align: left;
+}
+
+#content2 {
+  padding : 0px 0px 5px 5px;
+  text-align: left;
+}
+
+#content3 {
+  padding : 0px 0px 5px 5px;
+  text-align: left;
+}
